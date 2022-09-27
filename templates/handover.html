@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="{% static 'styles.css' %}">
   </head>
   <body>
-    <h1>Handovers</h1>
-    {% for handover in handover %}
-    <h2>
-      <a href="#">{{handover.title}}</a>
-      <p>{{handover.snippet}}</p>
-      <p>{{handover.date}}</p>
-    </h2>
-    {% endfor %}
+<div class="container">
+  <h1>Handovers</h1>
+  {% for handover in handover %}
+  <h2>
+    <a href="#">{{handover.title}}</a>
+    <p>{{handover.snippet}}</p>
+    <p>{{handover.date}}</p>
+  </h2>
+  {% endfor %}
+</div>
   </body>
 </html>
