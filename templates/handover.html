@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Handover</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+  </head>
+  <body>
+    <h1>Handovers</h1>
+    {% for handover in handover %}
+    <h2>
+      <a href="#">{{handover.title}}</a>
+      <p>{{handover.snippet}}</p>
+      <p>{{handover.date}}</p>
+    </h2>
+    {% endfor %}
+  </body>
+</html>
